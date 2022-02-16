@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fa_niharikareddymainampati_c0836194_android">
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,9 +13,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FA_NIHARIKAREDDYMAINAMPATI_C0836194_Android">
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAZux9LtDSE2QFCurfRtzHcwjfoHS4KO5c"/>
+            android:value="AIzaSyAZux9LtDSE2QFCurfRtzHcwjfoHS4KO5c" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

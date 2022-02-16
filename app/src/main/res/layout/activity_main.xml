@@ -6,12 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Address"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold" />
     <fragment
         android:id="@+id/g_map"
+        android:layout_below="@+id/tv_id"
         android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="500dp"
-        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
         android:layout_marginTop="10dp" />
+    <TextView
+        android:id="@+id/tv_ml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marker Location"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_below="@+id/g_map"
+        android:textColor="@color/black"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_add"
+        android:layout_below="@+id/tv_ml"
+        android:layout_marginTop="20dp"
+        android:text="Favorite Places"/>
 
 
 
